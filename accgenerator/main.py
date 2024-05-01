@@ -7,7 +7,7 @@ class Account:
         self.errors     = 0
         self.total      = 0
 
-        url = "https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/http.txt"
+        url = "https://raw.githubusercontent.com/Stinkypuppy/editV/main/accgenerator/proxies.txt"
         response = requests.get(url)
         if response.status_code == 200:
             self.proxies = response.text.splitlines()
